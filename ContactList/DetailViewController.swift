@@ -32,8 +32,10 @@ class DetailViewController: UIViewController {
     @IBAction func save(_ sender: Any) {
         // Prepare item and save in the list
         if nameField.text!.isEmpty{
+            errorLabel.alpha = 1
             errorLabel.text = NSLocalizedString("Enter complete name", comment: "the name is required")
         }else if mobileField.text!.isEmpty{
+            errorLabel.alpha = 1
             errorLabel.text = NSLocalizedString("Enter mobile number", comment: "the mobile number is required")
         }else{
             let name = nameField.text!
@@ -48,6 +50,10 @@ class DetailViewController: UIViewController {
                 contactList.editContact(row: index, contact: contact)
             }
             navigationController?.popViewController(animated: true)
+        }
+        UIView.animate(withDuration: 2){
+            () -> Void in
+            self.errorLabel.alpha = 0
         }
     }
     
