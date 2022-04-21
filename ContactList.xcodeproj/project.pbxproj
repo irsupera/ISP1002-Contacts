@@ -16,6 +16,7 @@
 		D4ABCA2C280FB39F0020CA83 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ABCA2B280FB39F0020CA83 /* ContactTableViewController.swift */; };
 		D4ABCA2E280FD7090020CA83 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ABCA2D280FD7090020CA83 /* Contact.swift */; };
 		D4ABCA30280FDAC30020CA83 /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ABCA2F280FDAC30020CA83 /* ContactList.swift */; };
+		D4ABCA352810D4AE0020CA83 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4ABCA372810D4AE0020CA83 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D4ABCA2F280FDAC30020CA83 /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
 		D4ABCA312810C71C0020CA83 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		D4ABCA322810C71D0020CA83 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "fr-CA"; path = "fr-CA.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		D4ABCA362810D4AE0020CA83 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				D4ABCA2B280FB39F0020CA83 /* ContactTableViewController.swift */,
 				D4ABCA2F280FDAC30020CA83 /* ContactList.swift */,
 				D4ABCA2D280FD7090020CA83 /* Contact.swift */,
+				D4ABCA372810D4AE0020CA83 /* Localizable.strings */,
 				D4ABCA1B280FAFDE0020CA83 /* Main.storyboard */,
 				D4ABCA1E280FAFE30020CA83 /* Assets.xcassets */,
 				D4ABCA20280FAFE30020CA83 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4ABCA352810D4AE0020CA83 /* Localizable.strings in Resources */,
 				D4ABCA22280FAFE30020CA83 /* LaunchScreen.storyboard in Resources */,
 				D4ABCA1F280FAFE30020CA83 /* Assets.xcassets in Resources */,
 				D4ABCA1D280FAFDE0020CA83 /* Main.storyboard in Resources */,
@@ -178,6 +182,14 @@
 				D4ABCA312810C71C0020CA83 /* fr-CA */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D4ABCA372810D4AE0020CA83 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4ABCA362810D4AE0020CA83 /* fr-CA */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

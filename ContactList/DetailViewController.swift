@@ -3,7 +3,7 @@
 //  ContactList
 //
 //  Created by IR Supera on 2022-04-19.
-//
+//  Iricher Supera - A00237146
 
 import UIKit
 
@@ -26,18 +26,21 @@ class DetailViewController: UIViewController {
             mobileField.text = contactList.contacts[index].mobile
             emailField.text = contactList.contacts[index].email
         }
+        // Set label to blank
         errorLabel.text = ""
     }
 
     @IBAction func save(_ sender: Any) {
-        // Prepare item and save in the list
+        // Show error when name field is empty
         if nameField.text!.isEmpty{
             errorLabel.alpha = 1
             errorLabel.text = NSLocalizedString("Enter complete name", comment: "the name is required")
+        // Show error when mobile field is empty
         }else if mobileField.text!.isEmpty{
             errorLabel.alpha = 1
             errorLabel.text = NSLocalizedString("Enter mobile number", comment: "the mobile number is required")
         }else{
+            // Prepare item and save in the list
             let name = nameField.text!
             let mobile = mobileField.text!
             let email = emailField.text!
@@ -51,6 +54,7 @@ class DetailViewController: UIViewController {
             }
             navigationController?.popViewController(animated: true)
         }
+        // Animate error to alpha 0/transparent
         UIView.animate(withDuration: 2){
             () -> Void in
             self.errorLabel.alpha = 0
